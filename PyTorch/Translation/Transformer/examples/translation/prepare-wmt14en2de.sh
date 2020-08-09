@@ -31,21 +31,24 @@ BPEROOT=subword-nmt
 BPE_TOKENS=40000
 
 URLS=(
-    "http://statmt.org/wmt13/training-parallel-europarl-v7.tgz"
-    "http://statmt.org/wmt13/training-parallel-commoncrawl.tgz"
-    "http://data.statmt.org/wmt17/translation-task/training-parallel-nc-v12.tgz"
+    #"http://statmt.org/wmt13/training-parallel-europarl-v7.tgz"
+    "https://gluonnlp-numpy-data.s3-accelerate.amazonaws.com/datasets/third_party_mirror/de-en-53bb5408d22977c89284bd755717e6bbb5b12bc5.tgz"
+    #"http://statmt.org/wmt13/training-parallel-commoncrawl.tgz"
+    "https://gluonnlp-numpy-data.s3-accelerate.amazonaws.com/datasets/third_party_mirror/training-parallel-commoncrawl-1c0ad85f0ebaf1d543acb009607205f5dae6627d.tgz"
+    #"http://data.statmt.org/wmt17/translation-task/training-parallel-nc-v12.tgz"
+    "https://gluonnlp-numpy-data.s3-accelerate.amazonaws.com/datasets/third_party_mirror/training-parallel-nc-v12-d98afc59e1d753485530b377ff65f1f891d3bced.tgz"
     "http://data.statmt.org/wmt17/translation-task/dev.tgz"
     "http://statmt.org/wmt14/test-full.tgz"
 )
 FILES=(
-    "training-parallel-europarl-v7.tgz"
-    "training-parallel-commoncrawl.tgz"
-    "training-parallel-nc-v12.tgz"
+    "de-en-53bb5408d22977c89284bd755717e6bbb5b12bc5.tgz"
+    "training-parallel-commoncrawl-1c0ad85f0ebaf1d543acb009607205f5dae6627d.tgz"
+    "training-parallel-nc-v12-d98afc59e1d753485530b377ff65f1f891d3bced.tgz"
     "dev.tgz"
     "test-full.tgz"
 )
 CORPORA=(
-    "training/europarl-v7.de-en"
+    "europarl-v7.de-en"
     "commoncrawl.de-en"
     "training/news-commentary-v12.de-en"
 )
